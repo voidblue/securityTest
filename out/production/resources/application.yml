@@ -1,0 +1,30 @@
+spring:
+  datasource:
+   url: jdbc:postgresql://127.0.0.1:5432/securitytest
+   username: postgres
+   password: jun456svt00
+
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob.non_contextual_creation: true
+
+  security:
+    oauth2:
+      client:
+        client-id: guest
+        client-secret: password
+
+
+    user:
+      name: user
+      password: passwrod
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
+        boot: debug
